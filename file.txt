@@ -1,0 +1,46 @@
+function fetch(){
+         $.get("https://api.covid19api.com/summary",
+        function (data){
+          // console.log(data['Countries'].length);
+          var tableval = document.getElementById('tableval');
+          for (var i = 1; i<(data['Countries'].length); i++) {
+            var x = tableval.insertRow();
+            x.insertCell(0);
+
+            tableval.rows[i].cells[0].innerHTML = data['Countries'][i-1]['Country'];
+            tableval.rows[i].cells[0].style.background = '#BB2CD9';
+            tableval.rows[i].cells[0].style.color = '#fff';
+
+            x.insertCell(1);
+
+            tableval.rows[i].cells[1].innerHTML = data['Countries'][i-1]['TotalConfirmed'];
+            tableval.rows[i].cells[1].style.background = '#01CBC6'; 
+
+            x.insertCell(2);
+
+            tableval.rows[i].cells[2].innerHTML = data['Countries'][i-1]['TotalRecovered'];
+            tableval.rows[i].cells[2].style.background = '#45CE30';
+            
+            x.insertCell(3);
+
+            tableval.rows[i].cells[3].innerHTML = data['Countries'][i-1]['TotalDeaths'];
+            tableval.rows[i].cells[3].style.background = '#F3B431';
+            
+
+            x.insertCell(4);
+
+            tableval.rows[i].cells[4].innerHTML = data['Countries'][i-1]['NewRecovered'];
+            tableval.rows[i].cells[4].style.background = '#45CE30';
+            
+
+            x.insertCell(5);
+
+            tableval.rows[i].cells[5].innerHTML = data['Countries'][i-1]['NewDeaths'];
+            tableval.rows[i].cells[5].style.background = '#E44236';
+
+            
+          }
+        }
+      )
+  }
+

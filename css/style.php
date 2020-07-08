@@ -1,0 +1,275 @@
+<style type="text/css">
+
+html{
+	scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+
+  }
+  .nav_style{
+    background-color:  #364F6B; !important
+  }
+  .nav_style a{
+    color: #F3EFE0;
+
+  }
+.logo{
+  padding-left: 30px!important;
+}
+
+  .nav_style span{
+    font-family: 'Bungee', cursive;
+
+  }
+
+  .padding_{
+    padding-top: 30px;
+  }
+
+.craouself{
+  height: 300px!important;
+}
+.primary-nav {
+    transition: all 0.4s ease-in-out !important;
+    -webkit-transition: all 0.4s ease-in-out !important;
+    -moz-transition: all 0.4s ease-in-out !important;
+ }
+ .shrink {
+     padding-top: 0 !important;
+     padding-bottom: 0 !important;
+     min-height: 85px !important;
+ }	
+
+.shrink {
+     padding-top: 0 !important;
+     padding-bottom: 0 !important;
+     min-height: 50px !important;
+ }
+
+/*///////parallax//////*/
+#plx{
+  background-image: url(https://images.unsplash.com/photo-1584463699037-d47fd412ce59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+}
+#plx1{
+  background-image: url(https://images.unsplash.com/photo-1588611911587-7bc55b45d588?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+}
+#plx2{
+  background-image: url(https://images.unsplash.com/photo-1587814969489-e5df12e17391?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+}
+
+
+/*////////////// main header \\\\\\\\\\\\\\*/
+
+.main_header{
+	height: 800px;
+	width: 100%;
+  background-color: #fff;
+}
+
+.rightside h1{
+	font-size: 3rem;
+}
+
+.corona_rot img{
+	animation: gocorona 3s linear infinite;
+}
+
+@keyframes gocorona{
+	0% { transform: rotate(0); }
+	100% { transform: rotate(360deg); }
+}
+
+.leftside img{ animation: heartbeat 5s linear infinite; }
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .75 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
+}
+
+
+
+/************** corona update *************/
+
+.corona_update{
+	margin: 0 0 30px 0;
+}
+
+.corona_update h3{ color: #ff7675; }
+
+.corona_update h1{ font-size: 2rem; text-align: center; }
+
+
+/*////////////// about section //////////////*/
+
+.sub_section{
+	background-color: #fbfafd;
+
+}
+
+
+
+
+/***************** top scroll **************/
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 30px; /* Place the button at the bottom of the page */
+  right: 40px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #00A8FF; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+  background:  #606060 ; /* Add a dark-grey background on hover */
+}
+
+
+/*//////////// responsive //////////////*/
+@media(max-width: 1280){
+  
+}
+@media(max-width:768px){
+	.main_header{ height: 700px; text-align: center;
+  padding-top: 50px; }
+
+	.main_header h1{     
+	text-align: center;
+    padding: 0;
+    width: 100%;
+    font-size: 30px; }
+
+
+    .count_style{
+    	display: inline!important;
+    }
+
+    .count_style p{ text-align: center; }
+
+    .about_res{ margin-left: 0!important; }
+    .carouself{
+        display: block;
+    }
+
+   .div_ {
+    margin-left: 0px;
+
+   }
+}
+/*//////////////// footer //////////*/
+footer{
+  height: 100px !important;
+  background-color: #DAE0E2;
+}
+
+/*//////covid news//////*/
+
+header{
+  font-size: 10px;
+  background-color: #364F6B;
+  color: white;
+}
+
+/*/////////news api/////////*/
+
+.container{
+  margin-top: 20px;
+
+}
+.title{
+   margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+.single-news{
+  background-color: #DAE0E2;
+  padding:30px;
+  box-shadow: 3px 3px 8px grey;
+ border-radius: 10px;
+}
+
+/* [1] The container */
+.img-hover-zoom {
+  height: 300px; /* [1.1] Set it as per your need */
+  /*overflow: hidden;*/ /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.2);
+}
+/*///////////////////////////newsapi/////////////////
+*//* [1] The container */
+.card-hover-zoom {
+  height: 300px; /* [1.1] Set it as per your need */
+  /*overflow: hidden;*/ /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.card-hover-zoom .single-news {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.card-hover-zoom:hover .single-news {
+  transform: scale(1.2);
+}
+.animate__animated.animate__fadeIn {
+  --animate-duration: 4s !important;
+}
+
+
+
+</style>
