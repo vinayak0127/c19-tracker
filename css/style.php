@@ -18,9 +18,11 @@ html{
 
   }
 .logo{
-  padding-left: 30px!important;
+  padding-left: 0px!important;
 }
-
+.navbar-toggler{
+  margin-right: 15px!important;
+}
   .nav_style span{
     font-family: 'Bungee', cursive;
 
@@ -170,11 +172,14 @@ html{
 #myBtn:hover {
   background:  #606060 ; /* Add a dark-grey background on hover */
 }
-
+.whole_div_mobile{
+  display: none!important;
+}
+  
 
 /*//////////// responsive //////////////*/
-@media(max-width: 1280){
-  
+@media(max-width: 1200px){
+
 }
 @media(max-width:768px){
 	.main_header{ height: 700px; text-align: center;
@@ -202,6 +207,31 @@ html{
     margin-left: 0px;
 
    }
+   .navbar-toggler{
+    margin-right: 10px!important;
+   }
+   .whole_div_laptop{
+    display: none!important;
+   }
+    .whole_div_mobile{
+    display: block!important;
+   }
+   .info-news_mob h2{
+    font-size: 2px!important;
+   }
+   .single-news{
+    
+    height: 350px!important;
+   }
+   .image_g img{
+    width: 100px!important;
+    height: auto;
+   }
+  
+ 
+  .logo h1{
+    font-size: 25px!important;
+  }*/
 }
 /*//////////////// footer //////////*/
 footer{
