@@ -57,18 +57,18 @@
 <div class="container">
   	<div class="row">
     	<div class="col text-center">
-     			<h1>
+     			<h1 class="image_g">
 			<img src="https://tse1.mm.bing.net/th?id=OIP.a9WQWWUYbCAiXwsRMg3N_gHaHa&pid=Api&P=0&w=300&h=300" width="200" height="200">
 				</h1>
     	</div>
 	</div>
 </div>
 
-<p class="text-center">NEWS update is powered by<a href="https://newsapi.org/">Newsapi.org</a></p>
+<p class="text-center text_h">NEWS update is powered by<a href="https://newsapi.org/">Newsapi.org</a></p>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-<div class="container animate__animated animate__fadeIn">
+<div class="container animate__animated animate__fadeIn whole_div_laptop">
   <h1 class="title text-center"></h1>
   <hr>
   <div class="list-wrapper">
@@ -85,10 +85,10 @@
       }
       foreach($newslist->articles as $news){?>
       <div class="row single-news card-hover-zoom">
-        <div class="col-4">
+        <div class="col-4 image_news ">
           <img style="width:100%;" src="<?php echo $news->urlToImage;?>">
         </div>
-        <div class="col-8">
+        <div class="col-8 info_news">
           <h2><?php echo $news->title;?></h2>
           <small><?php echo $news->source->name;?></small>
           <?php if($news->author && $news->author!=''){ ?>
@@ -103,46 +103,60 @@
   </div>
 </div>	
 
+<!-- ///////////////////////////////////////////////moibile view//////////////////////////////////// -->
+
+<div class="container animate__animated animate__fadeIn whole_div_mobile">
+  <h1 class="title text-center"></h1>
+  <hr>
+  <div class="list-wrapper">
+    <?php
+      if(file_exists('news.json')){
+        $api_url = 'news.json';
+        $newslist = json_decode(file_get_contents($api_url));
+      }else{
+        $news_keyword = 'politics'; //we will be fetching only sports related news
+        $api_url = 'http://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=03929028cb1246efadd304395e1db46b';
+        $newslist = file_get_contents($api_url);
+        file_put_contents('news.json', $newslist);
+        $newslist = json_decode($newslist);
+      }
+      foreach($newslist->articles as $news){?>
+      <div class="row single-news card-hover-zoom">
+      <!--   <div class="col-4 image_news ">
+          <img style="width:100%;" src="<?php echo $news->urlToImage;?>">
+        </div> -->
+        <div class="col-2 info_news_mob">
+          <a  href="<?php echo $news->url;?>"><h2 style="width: 300px; height: 70px; font-size: 20px;"><?php echo $news->title;?></h2></a>
+          <!-- <small style="width: 300px;"><?php echo $news->source->name;?></small> --><br>
+            <img style="width:300px; height: 180px;border-radius: 10px;" src="<?php echo $news->urlToImage;?>">
+
+         
+          <!-- <?php if($news->author && $news->author!=''){ ?>
+            <small>| <?php echo $news->author;?></small>
+          <?php } ?> -->
+          <!-- <p><?php echo $news->description;?></p> -->
+           <!-- <a  href="<?php echo $news->url;?>" class="btn  btn-primary" style="float:left;" target="_blank"><span style="font-size: 12px;">Read More >></span></a> -->
+          
+        </div>
+      </div>
+      <hr>
+    <?php } ?>
+  </div>
+</div>	
 
 
-<!-- ///////////// top cursor /////////// -->
-
-<div class="container scrolltop float-right pr-5">
-  <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"> </i>
-</div>
 	
-<!-- /////////////////// footer ////////////// -->
+
+
+  <!-- /////////////////// footer ////////////// -->
 
 <!-- Footer -->
-<footer class="page-footer font-small  ">
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:</div>
-  <p class="text-center"> developed and designed by vinayak raj</p>
+<footer>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright: vinayak raj
+  </div>
+  <!-- Copyright -->
+
 </footer>
 </body>
-<script type="text/javascript" src="newsapi.js">
-	
-	$('.count').counterUp({
-  delay:10,
-  time:3000
-})
-
-  
-mybutton = document.getElementById("myBtn");
-// When the user scrolls down 100px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-mybutton.style.display = "block";
-} else {
-mybutton.style.display = "none";
-}
-}
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-document.body.scrollTop = 0; // For Safari
-document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
-
-</script>
 </html>
