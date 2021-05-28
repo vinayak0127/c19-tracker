@@ -155,22 +155,22 @@ html{
 
 /***************** top scroll **************/
 #myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 30px; /* Place the button at the bottom of the page */
-  right: 40px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #00A8FF; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 10px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
+  display: none; 
+  position: fixed;
+  bottom: 30px;
+  right: 40px; 
+  z-index: 99; 
+  border: none;
+  outline: none;
+  background-color: #00A8FF; 
+  color: white; 
+  cursor: pointer; 
+  padding: 10px; 
+  border-radius: 10px; 
 }
 
 #myBtn:hover {
-  background:  #606060 ; /* Add a dark-grey background on hover */
+  background:  #606060 ; 
 }
 .whole_div_mobile{
   display: none!important;
@@ -265,34 +265,31 @@ header{
  border-radius: 10px;
 }
 
-/* [1] The container */
 .img-hover-zoom {
-  height: 300px; /* [1.1] Set it as per your need */
-  /*overflow: hidden;*/ /* [1.2] Hide the overflowing of child elements */
+  height: 300px;
 }
 
-/* [2] Transition property for smooth transformation of images */
 .img-hover-zoom img {
   transition: transform .5s ease;
 }
 
-/* [3] Finally, transforming the image when container gets hovered */
+
 .img-hover-zoom:hover img {
   transform: scale(1.2);
 }
 /*///////////////////////////newsapi/////////////////
-*//* [1] The container */
+*/
+
 .card-hover-zoom {
-  height: 300px; /* [1.1] Set it as per your need */
-  /*overflow: hidden;*/ /* [1.2] Hide the overflowing of child elements */
+  height: 300px;
+
 }
 
-/* [2] Transition property for smooth transformation of images */
+
 .card-hover-zoom .single-news {
   transition: transform .5s ease;
 }
 
-/* [3] Finally, transforming the image when container gets hovered */
 .card-hover-zoom:hover .single-news {
   transform: scale(1.2);
 }
