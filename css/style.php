@@ -147,11 +147,8 @@ html{
 
 .sub_section{
 	background-color: #fbfafd;
-
+  height:750px;
 }
-
-
-
 
 /***************** top scroll **************/
 #myBtn {

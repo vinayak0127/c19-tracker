@@ -145,7 +145,7 @@
 
 <!-- ****************** about section ********** -->
 
-<div class="container-fluid sub_section pt-5 pb-5 padding_" id="about">
+<div class="container-fluid sub_section pt-5 pb-5 padding" id="about">
 	<div class="section_header text-center mb-5 mt-4">
 		<h1 class="p-3"> About COVID-19</h1>
 	</div>
