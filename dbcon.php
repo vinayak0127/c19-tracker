@@ -7,7 +7,7 @@ $password = '';
 $db= 'coronadb';
 
  $con = mysqli_connect($server, $user, $password, $db);
-/*
+
 if($con){
 	?>
 	<script>
@@ -21,6 +21,6 @@ if($con){
 	</script>
 	<?php
 }
-*/
+
 
 ?>

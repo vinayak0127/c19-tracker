@@ -469,8 +469,7 @@ if(isset($_POST['submit'])){
 
 	$query = mysqli_query($con, $insertquery);
 
-/*
-	if($query){
+if($query){
 		?>
 		<script>
 			alert("inserted successful");
@@ -483,7 +482,7 @@ if(isset($_POST['submit'])){
 		</script>
 		<?php
 	}
-	*/
+	
 }
 
 ?>
