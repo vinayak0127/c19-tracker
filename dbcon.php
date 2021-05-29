@@ -7,20 +7,19 @@ $password = '';
 $db= 'coronadb';
 
  $con = mysqli_connect($server, $user, $password, $db);
-/*
+
 if($con){
 	?>
 	<script>
-		alert("connection successful");
+		console.log("connection successful");
 	</script>
 	<?php
 }else{
 	?>
 	<script>
-		alert("No connection ");
+		console.log("No connection ");
 	</script>
 	<?php
 }
 
-*/
 ?>
