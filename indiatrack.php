@@ -8,7 +8,7 @@
 	<?php  include 'link/links.php'; ?>
 	 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&display=swap" rel="stylesheet">
 
-    
+   <link rel="icon" href="./images/c19.svg" sizes="16x16 32x32" type="image/svg+xml">
             
 </head>
 <body onload="fetch()" class="main_header pt-5 animate__animated animate__fadeIn">

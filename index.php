@@ -4,7 +4,7 @@
 	<title></title>
 	<?php  include 'link/links.php'; ?>
 	<?php  include 'css/style.php'; ?>
-	
+	<link rel="icon" href="./images/c19.svg" sizes="16x16 32x32" type="image/svg+xml">
 </head>
 <body class="main_header pt-5 animate__animated animate__fadeIn">
 
