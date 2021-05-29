@@ -153,7 +153,7 @@
 <!-- Footer -->
 <footer>
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright: vinayak raj
+  <div class="footer-copyright text-center py-3">© 2021 Copyright: The CrypticsSRM 
   </div>
   <!-- Copyright -->
 
