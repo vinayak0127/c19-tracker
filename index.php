@@ -468,7 +468,7 @@ if(isset($_POST['submit'])){
 	$insertquery = " insert into coronacase(username, email, mobile, message) values('$username', '$email', '$mobile', '$msg') ";
 
 	$query = mysqli_query($con, $insertquery);
-/*
+
 if($query){
 		?>
 		<script>
@@ -484,6 +484,6 @@ if($query){
 	}
 	
 }
-*/
+
 
 ?>
