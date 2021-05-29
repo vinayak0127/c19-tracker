@@ -1,5 +1,6 @@
 # c19-tracker
 tracks corona cases worldwide and detailed information for cases  in india also gives news updates regarding health .
+
 #
 ![home](https://user-images.githubusercontent.com/60927324/120023860-04f15f00-c00c-11eb-9443-680622475ef6.png)
 #
