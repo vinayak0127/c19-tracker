@@ -413,7 +413,7 @@
 <!-- Footer -->
 <footer>
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright: vinayak raj
+  <div class="footer-copyright text-center py-3">© 2021 Copyright: The CrypticsSRM
   </div>
   <!-- Copyright -->
 
@@ -468,7 +468,7 @@ if(isset($_POST['submit'])){
 	$insertquery = " insert into coronacase(username, email, mobile, message) values('$username', '$email', '$mobile', '$msg') ";
 
 	$query = mysqli_query($con, $insertquery);
-
+/*
 if($query){
 		?>
 		<script>
@@ -484,5 +484,6 @@ if($query){
 	}
 	
 }
+*/
 
 ?>
