@@ -147,7 +147,7 @@ html{
 
 .sub_section{
 	background-color: #fbfafd;
-  height:300px;
+  height:750px;
 }
 
 /***************** top scroll **************/
